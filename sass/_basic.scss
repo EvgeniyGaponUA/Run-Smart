@@ -1,0 +1,130 @@
+// --basic start-----------------------------------------------------------------------------------------------
+
+html, body {
+    height: 100%;
+}
+
+html {
+    transition: all .8s ease 0s;
+    scroll-padding-top: 50px;
+    background-color: $html-bg;
+}
+
+body {
+    font-family: 'Museo Sans';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    color: $basic;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1918px;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden ;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: $white;
+}
+
+[class*="__container"] {
+    max-width: 982px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 129%;;
+}
+
+.btn {
+    display: inline-block;
+    background-color: $red;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    padding: 13px 68px;
+}
+
+.botton-card {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: $red;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: text-decoration-line 0.5s;
+
+        &:hover {
+            text-decoration-line: underline;
+            transition: text-decoration-line 0.5s;
+        }
+}
+
+
+// .btn {
+//     display: inline-block;
+//     padding: 8px 25px;
+//     border: 1px solid $basic; 
+//     text-align: center;
+//     transition: all 0.5s
+
+// }
+
+// .btn:hover {
+//     color:$white;
+//     background-color:$basic;
+//     transition: all 0.5s
+// }
+
+// .link-under {
+//     display: inline-block;
+//     position: relative;
+
+//         &:after {
+//             content: '';
+//             position: absolute;
+//             width: 100%;
+//             transform: scaleX(0);
+//             height: 1px;
+//             bottom: 0;
+//             left: 0;
+//             background-color: $basic;
+//             transform-origin: bottom right;
+//             transition: transform 0.3s ease-out;
+//         }
+
+//         &:hover:after {
+//             transform: scaleX(1);
+//             transform-origin: bottom left;
+//         }
+// }
+
+// --basic end-----------------------------------------------------------------------------------------------

@@ -1,0 +1,564 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Museo Sans"), url("../fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Museo Sans"), url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Museo Sans"), url("../fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  transition: all .8s ease 0s;
+  scroll-padding-top: 50px;
+  background-color: #F5F5F5;
+}
+
+body {
+  font-family: 'Museo Sans';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  color: #0D0D0D;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1918px;
+  margin: 0 auto;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+}
+
+[class*="__container"] {
+  max-width: 982px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 129%;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #C70101;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 156.3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 13px 68px;
+}
+
+.botton-card {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #C70101;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: text-decoration-line 0.5s;
+}
+
+.botton-card:hover {
+  text-decoration-line: underline;
+  transition: text-decoration-line 0.5s;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 21px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.header__inner .company-header {
+  text-align: center;
+}
+
+.header__inner .company-header__text {
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  margin: 0 0 7px 0;
+}
+
+.header__inner .company-header__name {
+  font-family: 'MuseoModerno', cursive;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 161%;
+  color: #fff;
+}
+
+.header__inner .right-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 7px 0 0;
+}
+
+.header__inner .right-header__tel {
+  display: block;
+  font-family: 'MuseoModerno', cursive;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+.header__inner .right-header__btn {
+  font-size: 12px;
+  line-height: 158.3%;
+  padding: 4px 6px;
+}
+
+.head {
+  background-image: url("../img/main/head/head_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.head .head__inner {
+  padding: 166px 0 93px 0;
+  text-align: right;
+}
+
+.head .head__inner .head__title {
+  font-size: 42px;
+  color: #fff;
+  margin: 0 0 17px 0;
+}
+
+.head .head__inner .head__subtitle {
+  color: #fff;
+  margin: 0 0 60px 0;
+}
+
+.head .head__inner .head__items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  margin: 0 0 65px 0;
+}
+
+.head .head__inner .head__items .item-head {
+  max-width: 108px;
+  text-align: center;
+}
+
+.head .head__inner .head__items .item-head__image {
+  margin: 0 0 20px 0;
+}
+
+.head .head__inner .head__items .item-head__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #fff;
+}
+
+.head .head__inner .head__btn {
+  margin: 0 0 10px 0;
+}
+
+.head .head__inner .head__bottom span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 156.3%;
+  color: #fff;
+}
+
+.head .head__inner .head__bottom .head__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 156.3%;
+  text-transform: uppercase;
+  color: #fff;
+  transition: text-decoration-line 0.6s;
+}
+
+.head .head__inner .head__bottom .head__link:hover {
+  text-decoration-line: underline;
+  transition: text-decoration-line 0.6s;
+}
+
+.advantage {
+  padding: 71px 0 64px 0;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+
+.advantage .advantage__title {
+  margin: 0 0 65px 0;
+}
+
+.advantage .advantage__items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.advantage .advantage__items .item-advantage {
+  max-width: 273px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantage .advantage__items .item-advantage .item-advantage__image {
+  margin: 0 0 30px 0;
+}
+
+.advantage .advantage__items .item-advantage .item-advantage__title {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 161%;
+}
+
+.advantage .advantage__items .item-advantage .item-advantage__text span {
+  font-family: 'MuseoModerno';
+  text-decoration-line: underline;
+  color: #FF0000;
+}
+
+.consultation {
+  padding: 100px 0 109px 0;
+  background-image: url("../img/main/consultation/consultation_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.consultation .consultation__title {
+  font-size: 36px;
+  line-height: 150%;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 0 8px 0;
+}
+
+.consultation .consultation__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #fff;
+  max-width: 426px;
+  margin: 0 0 36px 0;
+}
+
+.consultation .form-consultation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.consultation .form-consultation .form-consultation__input {
+  width: 300px;
+  padding: 20px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #4B4B4B;
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+}
+
+.consultation .form-consultation .form-consultation__input:last-child {
+  margin: 0 0 20px 0;
+}
+
+.consultation .form-consultation .form-consultation__btn {
+  cursor: pointer;
+  padding: 13px 43px;
+}
+
+.catalog {
+  padding: 108px 0 79px 0;
+}
+
+.catalog .catalog__head {
+  margin: 0 0 107px 0;
+}
+
+.catalog .catalog__head .catalog__swipper {
+  width: 100%;
+  height: 100%;
+}
+
+.catalog .catalog__head .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog .catalog__head .swiper-wrapper .swiper-slide img {
+  display: block;
+  max-width: 750px;
+  object-fit: cover;
+}
+
+.catalog .catalog__head .swiper-button-next:after, .catalog .catalog__head .swiper-button-prev:after {
+  color: #C70101;
+}
+
+.catalog .catalog__head .swiper-button-prev:after {
+  background-image: url("../img/main/catalog/chevron-left-solid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog .catalog__head .swiper-button-next:after {
+  background-image: url("../img/main/catalog/chevron-right-solid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog .catalog__title {
+  text-align: center;
+  margin: 0 0 46px 0;
+}
+
+.catalog .catalog__bottons {
+  margin: 0 0 57px 0;
+  text-align: center;
+}
+
+.catalog .catalog__botton {
+  display: inline-block;
+  padding: 16px 33px;
+  width: 220px;
+  border: 2px solid #D0D0D0;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #6B6B6B;
+}
+
+.catalog .catalog__botton:active {
+  border: 2px solid #C70101;
+  background-color: #C70101;
+  color: #fff;
+}
+
+.catalog .card-catalog {
+  max-width: 300px;
+  min-height: 440px;
+  border: 2px solid #E8E8E8;
+  padding: 17px 17px 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog .card-catalog .card-catalog__top {
+  position: relative;
+}
+
+.catalog .card-catalog .card-catalog__top .front-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  transition: all 0.4s ease-in;
+}
+
+.catalog .card-catalog .card-catalog__top .front-card.active {
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+
+.catalog .card-catalog .card-catalog__top .front-card .front-card__image {
+  margin: 0 0 15px 0;
+}
+
+.catalog .card-catalog .card-catalog__top .front-card .front-card__title {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  line-height: 156.3%;
+}
+
+.catalog .card-catalog .card-catalog__top .front-card .front-card__title span {
+  font-family: 'MuseoModerno';
+}
+
+.catalog .card-catalog .card-catalog__top .front-card .front-card__text {
+  margin: 0 0 10px 0;
+  line-height: 157%;
+}
+
+.catalog .card-catalog .card-catalog__top .front-card .front-card__botton {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #C70101;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: text-decoration-line 0.5s;
+}
+
+.catalog .card-catalog .card-catalog__top .front-card .front-card__botton:hover {
+  text-decoration-line: underline;
+  transition: text-decoration-line 0.5s;
+}
+
+.catalog .card-catalog .card-catalog__top .back-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+
+.catalog .card-catalog .card-catalog__top .back-card.active {
+  opacity: 1;
+  transition: all 0.4s ease-in;
+}
+
+.catalog .card-catalog .card-catalog__top .back-card .back-card__list {
+  padding: 0 0 0 15px;
+  margin: 0 0 75px 0;
+}
+
+.catalog .card-catalog .card-catalog__top .back-card .back-card__list > *:not(:last-child) {
+  margin: 0 0 3px 0;
+}
+
+.catalog .card-catalog .card-catalog__top .back-card .back-card__item {
+  text-align: left;
+  list-style: square;
+  color: #C70101;
+  line-height: 150%;
+}
+
+.catalog .card-catalog .card-catalog__top .back-card .back-card__item span {
+  color: #555555;
+}
+
+.catalog .card-catalog .bottom-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: 1px solid #E8E8E8;
+  padding: 20px 0 0 0;
+}
+
+.catalog .card-catalog .price-card {
+  text-align: left;
+}
+
+.catalog .card-catalog .price-card__old {
+  text-decoration-line: line-through;
+  color: #555555;
+}
+
+.catalog .card-catalog .price-card__new {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.catalog .card-catalog .price-card__new span {
+  font-family: 'MuseoModerno';
+}
+
+.catalog .card-catalog .bottom-card__link {
+  padding: 8px 34px;
+}
+/*# sourceMappingURL=main.css.map */
